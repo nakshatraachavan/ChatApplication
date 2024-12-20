@@ -1,0 +1,20 @@
+.message-box {
+    min-height: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #fafafa;
+  }
+  
+  .message {
+    word-wrap: break-word;
+  }
+  
+  .message::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .message::-webkit-scrollbar-thumb {
+    background: #ff8bb3;
+    border-radius: 5px;
+  }
+  
