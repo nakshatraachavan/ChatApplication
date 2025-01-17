@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import { AppBar, Toolbar, Container, Typography, CssBaseline, Fab } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import ScrollTop from "./scrollTop";
-import MessageList from "./MessageList";
-import MessageInput from "./MessageInput";
+import ScrollTop from "../scrollTop";
+import MessageList from "../messageList";
+import MessageInput from "../messageInput";
+import "./chatBox.css";
 
-const Chatbox = (props) => {
-  const [messages, setMessages] = useState([{msg:'Hiee Babbyyy',type:'recieve'}]);
+const ChatBox = (props) => {
+  const [messages, setMessages] = useState([{ msg: "Hiee Babbyyy", type: "receive" }]);
 
   const handleSend = (newMessage) => {
     setMessages([...messages, newMessage]);
   };
 
   const handleNewChat = () => {
-    setMessages([{msg:'Hiee Babbyyy',type:'receive'}]);
+    setMessages([{ msg: "Hiee Babbyyy", type: "receive" }]);
   };
 
   return (
@@ -32,7 +33,6 @@ const Chatbox = (props) => {
 
         <MessageList messages={messages} />
         <MessageInput onSend={handleSend} />
-
       </Container>
 
       <ScrollTop {...props}>
@@ -44,4 +44,4 @@ const Chatbox = (props) => {
   );
 };
 
-export default Chatbox;
+export default ChatBox;

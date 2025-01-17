@@ -1,17 +1,7 @@
-import './App.css';
-import Chatbox from './components/chatbox';
-import { BrowserRouter, Routes,Route} from 'react-router-dom';
+import ChatBox from "./components/chatBox";
 
 function App() {
-  return (
-    <BrowserRouter>
-    <Routes>
-          <Route path="/" element={<Chatbox/>} /> 
-          
-    </Routes>
-    </BrowserRouter>
-    
-  );
+  return <ChatBox />;
 }
 
 export default App;
