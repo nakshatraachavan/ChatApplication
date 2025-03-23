@@ -1,0 +1,15 @@
+/* Dark Modern Gradient Background */
+.background {
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensuring text remains black */
+.cascading-right h2,
+.cascading-right p,
+.cascading-right label {
+  color: black !important;
+}
